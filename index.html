@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Arquivos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Sidebar esquerda -->
+    <div id="sidebar">
+        <div id="navigation">
+            <button id="back-button">Voltar</button>
+        </div>
+        <h2 id="folder-name">Arquivos</h2>
+        <input type="text" id="search-input" placeholder="Procurar arquivos..." />
+        <button id="search-button">Buscar</button>
+        <ul id="file-list"></ul>
+        <button id="copy-left-to-right">Copiar para a direita</button>
+        <button id="rename-files-left">Renomear Arquivos</button>
+        <div id="create-folder-section">
+            <input type="text" id="folder-name-input" placeholder="Nome da nova pasta..." />
+            <button id="create-folder-button">Criar Pasta</button>
+        </div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div id="content">
+        <h1>Bem-vindo!</h1>
+        <!-- Remover o botão, pois a verificação será feita automaticamente -->
+        <div id="rateio-indicator" style="margin-top: 20px; display: none;">
+            <p id="rateio-message"></p>
+        </div>
+    </div>
+
+
+    <!-- Sidebar direita -->
+    <div id="sidebar-right">
+        <div id="navigation-right">
+            <button id="back-button-right">Voltar</button>
+        </div>
+        <h2 id="folder-name-right">Arquivos</h2>
+        <input type="text" id="search-input-right" placeholder="Procurar arquivos..." />
+        <button id="search-button-right">Buscar</button>
+        <ul id="file-list-right"></ul>
+        <button id="copy-right-to-left">Copiar para a esquerda</button>
+        <button id="rename-files-right">Renomear Arquivos</button>
+        <div id="create-folder-section">
+            <input type="text" id="folder-name-input-right" placeholder="Nome da nova pasta..." />
+            <button id="create-folder-button-right">Criar Pasta</button>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

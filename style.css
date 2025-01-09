@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+#sidebar {
+    width: 300px;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+#sidebar h2 {
+    margin-top: 0;
+}
+
+#file-list {
+    list-style: none;
+    padding: 0;
+}
+
+#file-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+#file-list li:hover {
+    background-color: #eaeaea;
+}
+
+#content {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#navigation {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+#navigation button {
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#navigation button:hover {
+    background-color: #0056b3;
+}
+
+#sidebar-right {
+    width: 300px;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+#sidebar-right h2 {
+    margin-top: 0;
+}
+
+#file-list-right {
+    list-style: none;
+    padding: 0;
+}
+
+#file-list-right li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+#file-list-right li:hover {
+    background-color: #eaeaea;
+}
+
+#navigation-right {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+#navigation-right button {
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#navigation-right button:hover {
+    background-color: #0056b3;
+}
+
+#search-input,
+#search-input-right {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+#create-folder-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#create-folder-section input {
+    padding: 8px;
+    font-size: 14px;
+}
+
+#create-folder-section button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#create-folder-section button:hover {
+    background-color: #45a049;
+}
