@@ -1,0 +1,11 @@
+[build]
+  functions = "netlify/functions"  # Pasta onde suas funções Lambda estarão
+
+[dev]
+  functions = "netlify/functions"  # Definindo a pasta de funções no ambiente de desenvolvimento local
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+  force = true
